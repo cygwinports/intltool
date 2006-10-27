@@ -19,7 +19,7 @@ from tarballs don't need intltool, only folks building from cvs.
 
 Runtime requirements:
   cygwin-1.5.19-4
-  bash-3.0-14
+  bash-3.1-6
   perl-5.8.7-5
 
 Build requirements:
@@ -27,6 +27,7 @@ Build requirements:
   cygwin-1.5.19-4
   autoconf2.5-2.59-3
   automake1.9-1.9.6-1
+  cygport-0.1.93-1
   gawk-3.1.5-1
   make-3.80-1
   sed-4.1.4-1
@@ -40,15 +41,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack intltool-0.34.2-X-src.tar.bz2
+  unpack intltool-0.35.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./intltool-0.34.2-X.sh all
+  cygport ./intltool-0.35.0-X.cygport all
 
 This will create:
-  /usr/src/intltool-0.34.2-X-src.tar.bz2
-  /usr/src/intltool-0.34.2-X.tar.bz2
+  /usr/src/intltool-0.35.0-X-src.tar.bz2
+  /usr/src/intltool-0.35.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -60,19 +61,19 @@ Files included in the binary package:
   /usr/bin/intltool-update
   /usr/bin/intltoolize
   /usr/share/aclocal/intltool.m4
-  /usr/share/doc/Cygwin/intltool-0.34.2.README
-  /usr/share/doc/intltool-0.34.2/AUTHORS
-  /usr/share/doc/intltool-0.34.2/ChangeLog
-  /usr/share/doc/intltool-0.34.2/COPYING
-  /usr/share/doc/intltool-0.34.2/I18N-HOWTO
-  /usr/share/doc/intltool-0.34.2/INSTALL
-  /usr/share/doc/intltool-0.34.2/NEWS
-  /usr/share/doc/intltool-0.34.2/README
-  /usr/share/doc/intltool-0.34.2/TODO
+  /usr/share/doc/Cygwin/intltool-0.35.0.README
+  /usr/share/doc/intltool-0.35.0/AUTHORS
+  /usr/share/doc/intltool-0.35.0/ChangeLog
+  /usr/share/doc/intltool-0.35.0/COPYING
+  /usr/share/doc/intltool-0.35.0/I18N-HOWTO
+  /usr/share/doc/intltool-0.35.0/INSTALL
+  /usr/share/doc/intltool-0.35.0/NEWS
+  /usr/share/doc/intltool-0.35.0/README
+  /usr/share/doc/intltool-0.35.0/TODO
+  /usr/share/intltool/Makefile.in.in
   /usr/share/intltool/intltool-extract.in
   /usr/share/intltool/intltool-merge.in
   /usr/share/intltool/intltool-update.in
-  /usr/share/intltool/Makefile.in.in
   /usr/share/man/man8/intltool-extract.8.gz
   /usr/share/man/man8/intltool-merge.8.gz
   /usr/share/man/man8/intltool-prepare.8.gz
@@ -83,9 +84,11 @@ Files included in the binary package:
 
 Port Notes:
 
+----- version 0.35.0-1 -----
+Version bump; this version will be required for most of GNOME 2.14.2.
+
 ----- version 0.34.2-1 -----
-Version bump.
-Last official release was 0.33-1 by Gerrit Haase.
+Version bump by new Cygwin maintainer.
 
 
 Cygwin port maintained by:
