@@ -18,19 +18,19 @@ from tarballs don't need intltool, only folks building from cvs.
 (This is modelled on gettextize.)
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  bash-3.1-6
+  cygwin-1.5.22-1
+  bash
   perl-5.8.7-5
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  cygport-0.1.93-1
-  gawk-3.1.5-1
-  make-3.80-1
-  sed-4.1.4-1
+  cygport-0.2.7-1
+  gawk-3.1.5-2
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome.org/
@@ -41,15 +41,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack intltool-0.35.0-X-src.tar.bz2
+  unpack intltool-0.35.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./intltool-0.35.0-X.cygport all
+  cygport ./intltool-0.35.1-X.cygport all
 
 This will create:
-  /usr/src/intltool-0.35.0-X-src.tar.bz2
-  /usr/src/intltool-0.35.0-X.tar.bz2
+  /usr/src/intltool-0.35.1-X-src.tar.bz2
+  /usr/src/intltool-0.35.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,15 +61,15 @@ Files included in the binary package:
   /usr/bin/intltool-update
   /usr/bin/intltoolize
   /usr/share/aclocal/intltool.m4
-  /usr/share/doc/Cygwin/intltool-0.35.0.README
-  /usr/share/doc/intltool-0.35.0/AUTHORS
-  /usr/share/doc/intltool-0.35.0/ChangeLog
-  /usr/share/doc/intltool-0.35.0/COPYING
-  /usr/share/doc/intltool-0.35.0/I18N-HOWTO
-  /usr/share/doc/intltool-0.35.0/INSTALL
-  /usr/share/doc/intltool-0.35.0/NEWS
-  /usr/share/doc/intltool-0.35.0/README
-  /usr/share/doc/intltool-0.35.0/TODO
+  /usr/share/doc/Cygwin/intltool-0.35.1.README
+  /usr/share/doc/intltool-0.35.1/AUTHORS
+  /usr/share/doc/intltool-0.35.1/ChangeLog
+  /usr/share/doc/intltool-0.35.1/COPYING
+  /usr/share/doc/intltool-0.35.1/I18N-HOWTO
+  /usr/share/doc/intltool-0.35.1/INSTALL
+  /usr/share/doc/intltool-0.35.1/NEWS
+  /usr/share/doc/intltool-0.35.1/README
+  /usr/share/doc/intltool-0.35.1/TODO
   /usr/share/intltool/Makefile.in.in
   /usr/share/intltool/intltool-extract.in
   /usr/share/intltool/intltool-merge.in
@@ -83,6 +83,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.35.1-1 -----
+Version bump.
 
 ----- version 0.35.0-1 -----
 Version bump; this version will be required for most of GNOME 2.14.2.
