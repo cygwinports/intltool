@@ -41,15 +41,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack intltool-0.35.5-X-src.tar.bz2
+  unpack intltool-0.36.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./intltool-0.35.5-X.cygport all
+  cygport ./intltool-0.36.2-X.cygport all
 
 This will create:
-  /usr/src/intltool-0.35.5-X-src.tar.bz2
-  /usr/src/intltool-0.35.5-X.tar.bz2
+  /usr/src/intltool-0.36.2-X-src.tar.bz2
+  /usr/src/intltool-0.36.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,15 +61,15 @@ Files included in the binary package:
   /usr/bin/intltool-update
   /usr/bin/intltoolize
   /usr/share/aclocal/intltool.m4
-  /usr/share/doc/Cygwin/intltool-0.35.5.README
-  /usr/share/doc/intltool-0.35.5/AUTHORS
-  /usr/share/doc/intltool-0.35.5/ChangeLog
-  /usr/share/doc/intltool-0.35.5/COPYING
-  /usr/share/doc/intltool-0.35.5/I18N-HOWTO
-  /usr/share/doc/intltool-0.35.5/INSTALL
-  /usr/share/doc/intltool-0.35.5/NEWS
-  /usr/share/doc/intltool-0.35.5/README
-  /usr/share/doc/intltool-0.35.5/TODO
+  /usr/share/doc/Cygwin/intltool-0.36.2.README
+  /usr/share/doc/intltool-0.36.2/AUTHORS
+  /usr/share/doc/intltool-0.36.2/ChangeLog
+  /usr/share/doc/intltool-0.36.2/COPYING
+  /usr/share/doc/intltool-0.36.2/I18N-HOWTO
+  /usr/share/doc/intltool-0.36.2/INSTALL
+  /usr/share/doc/intltool-0.36.2/NEWS
+  /usr/share/doc/intltool-0.36.2/README
+  /usr/share/doc/intltool-0.36.2/TODO
   /usr/share/intltool/Makefile.in.in
   /usr/share/intltool/intltool-extract.in
   /usr/share/intltool/intltool-merge.in
@@ -83,6 +83,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.36.2-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 0.35.5-1 -----
 Version bump.
