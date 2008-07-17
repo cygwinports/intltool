@@ -1,7 +1,11 @@
 category: Gnome Devel
-requires: cygwin bash perl
+requires: bash perl
 sdesc: "GNOME source internalization scripts"
-ldesc: "The intltool package has a script, intltoolize, which copies the
-various scripts and does the other magic to your module. So users
-building from tarballs don't need intltool, only folks building from
-cvs. (This is modelled on gettextize.)"
+ldesc: "The intltool collection can be used to do these things:
+ o Extract translatable strings from various source files (.xml.in,
+   .glade, .desktop.in, .server.in, .oaf.in).
+ o Collect the extracted strings together with messages from traditional
+   source files (.c, .h) in po/$(PACKAGE).pot.
+ o Merge back the translations from .po files into .xml, .desktop and
+   .oaf files.  This merge step will happen at build resp. installation
+   time."
