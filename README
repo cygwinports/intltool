@@ -18,12 +18,12 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gnome-common-2.20.0-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  cygport-0.9.5-1
+  gawk-3.1.6-2
+  gnome-common-2.24.0-1
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical website:
@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack intltool-0.40.5-X-src.tar.bz2
+  unpack intltool-0.40.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./intltool-0.40.5-X.cygport all
+  cygport ./intltool-0.40.6-X.cygport all
 
 This will create:
-  /usr/src/intltool-0.40.5-X-src.tar.bz2
-  /usr/src/intltool-0.40.5-X.tar.bz2
+  /usr/src/intltool-0.40.6-X-src.tar.bz2
+  /usr/src/intltool-0.40.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -55,14 +55,14 @@ Files included in the binary package:
   /usr/bin/intltool-update
   /usr/bin/intltoolize
   /usr/share/aclocal/intltool.m4
-  /usr/share/doc/intltool-0.40.5/AUTHORS
-  /usr/share/doc/intltool-0.40.5/ChangeLog
-  /usr/share/doc/intltool-0.40.5/COPYING
-  /usr/share/doc/intltool-0.40.5/I18N-HOWTO
-  /usr/share/doc/intltool-0.40.5/INSTALL
-  /usr/share/doc/intltool-0.40.5/NEWS
-  /usr/share/doc/intltool-0.40.5/README
-  /usr/share/doc/intltool-0.40.5/TODO
+  /usr/share/doc/intltool/AUTHORS
+  /usr/share/doc/intltool/ChangeLog
+  /usr/share/doc/intltool/COPYING
+  /usr/share/doc/intltool/I18N-HOWTO
+  /usr/share/doc/intltool/INSTALL
+  /usr/share/doc/intltool/NEWS
+  /usr/share/doc/intltool/README
+  /usr/share/doc/intltool/TODO
   /usr/share/intltool/Makefile.in.in
   /usr/share/man/man8/intltool-extract.8.gz
   /usr/share/man/man8/intltool-merge.8.gz
@@ -73,6 +73,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.40.6-1 -----
+Version bump for GNOME 2.26.
 
 ----- version 0.40.5-1 -----
 Version bump for GNOME 2.24.
