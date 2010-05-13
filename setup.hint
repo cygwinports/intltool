@@ -1,5 +1,5 @@
 category: Gnome Devel
-requires: bash perl
+requires: bash coreutils gettext-devel grep perl sed
 sdesc: "GNOME source internalization scripts"
 ldesc: "The intltool collection can be used to do these things:
  o Extract translatable strings from various source files (.xml.in,
