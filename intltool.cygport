@@ -1,0 +1,16 @@
+inherit gnome2
+
+NAME="intltool"
+VERSION=0.50.2
+RELEASE=2
+CATEGORY="GNOME Devel"
+SUMMARY="GNOME XML internalization scripts"
+DESCRIPTION="Utility scripts for internationalizing XML.  Automatically extracts
+translatable strings from oaf, glade, bonobo ui, nautilus theme and other XML
+files into the po files, and merges translations from po files back into .oaf
+files and other types of XML files."
+HOMEPAGE="http://launchpad.net/intltool/"
+SRC_URI="http://launchpad.net/intltool/trunk/${VERSION}/+download/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="0.50.2-m4macros.patch"
+
+REQUIRES="gettext-devel"
