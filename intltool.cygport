@@ -1,8 +1,8 @@
 inherit gnome2
 
 NAME="intltool"
-VERSION=0.50.2
-RELEASE=2
+VERSION=0.51.0
+RELEASE=1
 CATEGORY="GNOME Devel"
 SUMMARY="GNOME XML internalization scripts"
 DESCRIPTION="Utility scripts for internationalizing XML.  Automatically extracts
@@ -11,6 +11,9 @@ files into the po files, and merges translations from po files back into .oaf
 files and other types of XML files."
 HOMEPAGE="http://launchpad.net/intltool/"
 SRC_URI="http://launchpad.net/intltool/trunk/${VERSION}/+download/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.50.2-m4macros.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/intltool.git/plain/intltool-0.51.0-perl-5.22.patch
+	http://pkgs.fedoraproject.org/cgit/intltool.git/plain/intltool-merge-Create-cache-file-atomically.patch
+"
 
 REQUIRES="gettext-devel"
