@@ -16,4 +16,6 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/intltool.git/plain/intltool-merge-Create-cache-file-atomically.patch
 "
 
+ARCH=noarch
+
 REQUIRES="gettext-devel"
